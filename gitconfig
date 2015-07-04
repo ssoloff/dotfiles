@@ -1,0 +1,7 @@
+[user]
+	name = Steven Soloff
+	email = s_soloff@yahoo.com
+[diff]
+	tool = kdiff3
+[push]
+	default = simple
