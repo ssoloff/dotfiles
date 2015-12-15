@@ -19,3 +19,7 @@ git_branch()
 PS1='\[\033[01;32m\]\u@\h \[\033[01;31m\]\w $(git_branch)\n\[\033[01;34m\]$\[\033[00m\] '
 
 export N_PREFIX=$HOME/.local
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
