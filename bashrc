@@ -16,7 +16,7 @@ git_branch()
     [ -n "$GIT_BRANCH" ] && echo "($GIT_BRANCH) "
 }
 
-PS1='\[\033[01;32m\]\u@\h \[\033[01;31m\]\w $(git_branch)\n\[\033[01;34m\]$\[\033[00m\] '
+PS1='\[\033[0;32m\]\u@\h \[\033[0;33m\]\w \[\033[0;36m\]$(git_branch)\n\[\033[01;34m\]$\[\033[00m\] '
 
 export N_PREFIX=$HOME/.local
 
