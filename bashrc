@@ -10,6 +10,9 @@ fi
 
 # User specific aliases and functions
 
+export VISUAL=vim
+export EDITOR=$VISUAL
+
 git_branch()
 {
     GIT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null) || return
