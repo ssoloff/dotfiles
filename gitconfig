@@ -2,7 +2,7 @@
 	name = Steven Soloff
 	email = steven.soloff@gmail.com
 [diff]
-	tool = kdiff3
+	tool = meld
 [push]
 	default = simple
 [alias]
