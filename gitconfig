@@ -7,3 +7,5 @@
 	default = simple
 [alias]
 	lg = log --oneline --decorate --graph
+[gui]
+	diffopts = -w
