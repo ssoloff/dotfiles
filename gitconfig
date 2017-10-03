@@ -1,11 +1,12 @@
 [user]
 	name = Steven Soloff
 	email = steven.soloff@gmail.com
+	signingkey = E8A242913EDACD10C66C256E1D2EAF2BA35105CF
 [diff]
 	tool = meld
 [push]
 	default = simple
 [alias]
 	lg = log --oneline --decorate --graph
-[gui]
-	diffopts = -w
+[gpg]
+	program = gpg2

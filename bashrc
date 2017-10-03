@@ -25,6 +25,8 @@ PS1='\[\033[0;32m\]\u@\h \[\033[0;33m\]\w \[\033[0;36m\]$(git_branch)\n\[\033[01
 
 export N_PREFIX=$HOME/.local
 
+export GPG_TTY=$(tty)
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
