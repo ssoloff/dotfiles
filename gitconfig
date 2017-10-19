@@ -10,3 +10,5 @@
 	lg = log --oneline --decorate --graph
 [gpg]
 	program = gpg2
+[commit]
+	gpgsign = true
