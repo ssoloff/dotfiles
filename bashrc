@@ -13,19 +13,15 @@ fi
 export VISUAL=vim
 export EDITOR=$VISUAL
 
-git_branch()
-{
-    GIT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null) || return
-    [ -n "$GIT_BRANCH" ] && echo "($GIT_BRANCH) "
-}
-
 eval "$(gulp --completion=bash)"
-
-PS1='\[\033[0;32m\]\u@\h \[\033[0;33m\]\w \[\033[0;36m\]$(git_branch)\n\[\033[01;34m\]$\[\033[00m\] '
 
 export N_PREFIX=$HOME/.local
 
 export GPG_TTY=$(tty)
+
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+  source $HOME/.bash-git-prompt/gitprompt.sh
+fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
