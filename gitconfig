@@ -1,7 +1,7 @@
 [user]
 	name = Steven Soloff
-	email = steven.soloff@gmail.com
-	signingkey = E8A242913EDACD10C66C256E1D2EAF2BA35105CF
+	email = steven.soloff@protonmail.com
+	signingkey = 52D95A8A9A3263A56F553E7B4E3F3C0708DF81A2
 [diff]
 	tool = meld
 [push]
